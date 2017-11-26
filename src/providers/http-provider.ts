@@ -14,9 +14,13 @@ export class HttpProvider {
     
     obterMes(){
         var data = new Date();
-        var mes = data.getMonth();
+        var mes = data.getMonth() + 1; 
+        var nmes = mes.toString()
         var ano = data.getFullYear();
-        var url = 'https://nunofcguerreiro.com/api-euromillions-json?result=' + ano + '-' + mes;
+        if (mes < 10) {
+            nmes = '0' + mes; 
+        }
+        var url = 'https://nunofcguerreiro.com/api-euromillions-json?result=' + ano + '-' + nmes;
         console.log(url);
         return this.http.get(url).map(res => res.json());
     }
