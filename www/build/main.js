@@ -78,6 +78,7 @@ var TabsPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_http_provider__ = __webpack_require__(273);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -89,17 +90,39 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var MesPage = (function () {
-    function MesPage(navCtrl) {
+    function MesPage(navCtrl, httpProvider, loadingCtrl) {
         this.navCtrl = navCtrl;
+        this.httpProvider = httpProvider;
+        this.loadingCtrl = loadingCtrl;
+        this.loading = this.loadingCtrl.create({
+            content: "\n  \t\t\t<ion-spinner></ion-spinner>"
+        });
+        this.obterDadosMes();
     }
+    // Obter Mês dados
+    MesPage.prototype.obterDadosMes = function () {
+        var _this = this;
+        this.loading.present();
+        this.httpProvider.obterMes().subscribe(function (ultimo) {
+            _this.novoMes = ultimo.drawns;
+        }, function (err) {
+            console.error("Erro: " + err);
+        }, function () {
+            _this.loading.dismiss();
+            console.log("Informações obtidas com sucesso");
+        });
+    };
     MesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-mes',template:/*ion-inline-start:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\mes\mes.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\mes\mes.html"*/
+            selector: 'page-mes',template:/*ion-inline-start:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\mes\mes.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Resultados por Mês\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card *ngFor="let ultimos of novoMes">\n    <ion-card-header>\n      <h6><b>{{ ultimos.date }}</b></h6>\n      <hr/>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-badge color="primary">{{ ultimos.numbers }}</ion-badge>\n    </ion-card-content>\n    <ion-card-content>\n      <ion-badge color="orang">{{ ultimos.stars }}</ion-badge>\n    </ion-card-content>\n  </ion-card>\n</ion-content>'/*ion-inline-end:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\mes\mes.html"*/,
+            providers: [__WEBPACK_IMPORTED_MODULE_2__providers_http_provider__["a" /* HttpProvider */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_http_provider__["a" /* HttpProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_http_provider__["a" /* HttpProvider */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */]) === "function" && _c || Object])
     ], MesPage);
     return MesPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=mes.js.map
@@ -151,7 +174,7 @@ var UltimoPage = (function () {
     };
     UltimoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-ultimo',template:/*ion-inline-start:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\ultimo\ultimo.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Último</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding center>\n  <ion-card *ngFor="let ultimos of novoUltimo">\n    <ion-card-header>\n      <h6><b>{{ ultimos.date }}</b></h6>\n      <hr/>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-badge color="primary">{{ ultimos.numbers }}</ion-badge>\n    </ion-card-content>\n    <ion-card-content>\n      <ion-badge color="orang">{{ ultimos.stars }}</ion-badge>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\ultimo\ultimo.html"*/,
+            selector: 'page-ultimo',template:/*ion-inline-start:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\ultimo\ultimo.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Último</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card *ngFor="let ultimos of novoUltimo">\n    <ion-card-header>\n      <h6><b>{{ ultimos.date }}</b></h6>\n      <hr/>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-badge color="primary">{{ ultimos.numbers }}</ion-badge>\n    </ion-card-content>\n    <ion-card-content>\n      <ion-badge color="orang">{{ ultimos.stars }}</ion-badge>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\ultimo\ultimo.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_2__providers_http_provider__["a" /* HttpProvider */]]
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_http_provider__["a" /* HttpProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_http_provider__["a" /* HttpProvider */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */]) === "function" && _c || Object])
@@ -330,7 +353,8 @@ var HttpProvider = (function () {
         var data = new Date();
         var mes = data.getMonth();
         var ano = data.getFullYear();
-        var url = 'https://nunofcguerreiro.com/api-euromillions?result=' + ano + '-' + mes;
+        var url = 'https://nunofcguerreiro.com/api-euromillions-json?result=' + ano + '-' + mes;
+        console.log(url);
         return this.http.get(url).map(function (res) { return res.json(); });
     };
     HttpProvider = __decorate([

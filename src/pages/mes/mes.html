@@ -1,11 +1,22 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Resultados por Mês
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+  <ion-card *ngFor="let ultimos of novoMes">
+    <ion-card-header>
+      <h6><b>{{ ultimos.date }}</b></h6>
+      <hr/>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-badge color="primary">{{ ultimos.numbers }}</ion-badge>
+    </ion-card-content>
+    <ion-card-content>
+      <ion-badge color="orang">{{ ultimos.stars }}</ion-badge>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

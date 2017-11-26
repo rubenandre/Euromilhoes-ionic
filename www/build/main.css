@@ -27972,6 +27972,30 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+page-mes ion-title {
+  text-align: center;
+}
+
+page-mes ion-card-header {
+  text-align: center;
+}
+
+page-mes ion-card-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+page-mes ion-badge {
+  text-align: center;
+  font-size: 18px;
+}
+
 page-ultimo ion-title {
   text-align: center;
 }
