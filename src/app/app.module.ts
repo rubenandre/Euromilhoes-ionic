@@ -7,6 +7,7 @@ import { HttpProvider } from '../providers/http-provider'
 
 import { MesPage } from '../pages/mes/mes';
 import { UltimoPage } from '../pages/ultimo/ultimo';
+import { SobrePage } from '../pages/sobre/sobre';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -17,6 +18,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     UltimoPage,
     MesPage,
+    SobrePage,
     TabsPage
   ],
   imports: [
@@ -29,6 +31,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     UltimoPage,
     MesPage,
+    SobrePage,
     TabsPage
   ],
   providers: [
