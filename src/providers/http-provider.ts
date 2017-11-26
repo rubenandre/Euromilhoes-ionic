@@ -10,8 +10,8 @@ export class HttpProvider {
     //Obtem dados ultimo
     obterUltimo(){
         return this.http.get('https://nunofcguerreiro.com/api-euromillions-json').map(res => res.json());
-        console.log(this.http.get('https://nunofcguerreiro.com/api-euromillions-json').map(res => res.json()));
     }
+    
     obterMes(){
         var data = new Date();
         var mes = data.getMonth();

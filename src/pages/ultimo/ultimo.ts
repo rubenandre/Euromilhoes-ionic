@@ -1,14 +1,42 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, LoadingController } from 'ionic-angular';
+import { HttpProvider } from '../../providers/http-provider'
 
 @Component({
   selector: 'page-ultimo',
-  templateUrl: 'ultimo.html'
+  templateUrl: 'ultimo.html',
+  providers:[HttpProvider]
 })
+
 export class UltimoPage {
+	loading: any;
+	novoUltimo: any;
+  	constructor(public navCtrl: NavController, private httpProvider: HttpProvider, public loadingCtrl: LoadingController) {
 
-  constructor(public navCtrl: NavController) {
+  		this.loading = this.loadingCtrl.create({
+  			content: `
+  			<ion-spinner></ion-spinner>`		
+  		});
 
-  }
+  		this.obterDadosUltimo();
+  	}
+
+  	// Obter ultimo dados
+  	obterDadosUltimo(){
+  		this.loading.present();
+  		this.httpProvider.obterUltimo().subscribe(
+  			ultimo => {
+  				this.novoUltimo = ultimo.drawns;
+  			},
+  			err => {
+  				console.error("Erro: " + err);
+
+  			},
+  			() => {
+  				this.loading.dismiss();
+  				console.log("Informações obtidas com sucesso");
+  			});
+  	}
 
 }
+

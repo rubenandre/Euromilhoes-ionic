@@ -1,3 +1,20 @@
 page-ultimo {
+	ion-title {
+		text-align: center;
+	}
 
+	ion-card-header {
+		text-align: center;
+	}
+
+
+	ion-card-content{
+		    display: flex;
+    		justify-content: center;
+	}
+
+	ion-badge {
+		text-align: center;
+		font-size: 18px;
+	}
 }

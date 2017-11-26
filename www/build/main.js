@@ -97,7 +97,7 @@ var MesPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-mes',template:/*ion-inline-start:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\mes\mes.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\mes\mes.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], MesPage);
     return MesPage;
 }());
@@ -113,6 +113,7 @@ var MesPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UltimoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_http_provider__ = __webpack_require__(273);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -124,17 +125,39 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var UltimoPage = (function () {
-    function UltimoPage(navCtrl) {
+    function UltimoPage(navCtrl, httpProvider, loadingCtrl) {
         this.navCtrl = navCtrl;
+        this.httpProvider = httpProvider;
+        this.loadingCtrl = loadingCtrl;
+        this.loading = this.loadingCtrl.create({
+            content: "\n  \t\t\t<ion-spinner></ion-spinner>"
+        });
+        this.obterDadosUltimo();
     }
+    // Obter ultimo dados
+    UltimoPage.prototype.obterDadosUltimo = function () {
+        var _this = this;
+        this.loading.present();
+        this.httpProvider.obterUltimo().subscribe(function (ultimo) {
+            _this.novoUltimo = ultimo.drawns;
+        }, function (err) {
+            console.error("Erro: " + err);
+        }, function () {
+            _this.loading.dismiss();
+            console.log("Informações obtidas com sucesso");
+        });
+    };
     UltimoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-ultimo',template:/*ion-inline-start:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\ultimo\ultimo.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2>Welcome to Ionic!</h2>\n  <p>\n    This starter project comes with simple tabs-based layout for apps\n    that are going to primarily use a Tabbed UI.\n  </p>\n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n</ion-content>\n'/*ion-inline-end:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\ultimo\ultimo.html"*/
+            selector: 'page-ultimo',template:/*ion-inline-start:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\ultimo\ultimo.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Último</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding center>\n  <ion-card *ngFor="let ultimos of novoUltimo">\n    <ion-card-header>\n      <h6><b>{{ ultimos.date }}</b></h6>\n      <hr/>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-badge color="primary">{{ ultimos.numbers }}</ion-badge>\n    </ion-card-content>\n    <ion-card-content>\n      <ion-badge color="orang">{{ ultimos.stars }}</ion-badge>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\ultimo\ultimo.html"*/,
+            providers: [__WEBPACK_IMPORTED_MODULE_2__providers_http_provider__["a" /* HttpProvider */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_http_provider__["a" /* HttpProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_http_provider__["a" /* HttpProvider */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */]) === "function" && _c || Object])
     ], UltimoPage);
     return UltimoPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=ultimo.js.map
@@ -164,18 +187,20 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(264);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_http_provider__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_mes_mes__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_ultimo_ultimo__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_http_provider__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_mes_mes__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_ultimo_ultimo__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(194);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -193,12 +218,13 @@ var AppModule = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_ultimo_ultimo__["a" /* UltimoPage */],
-                __WEBPACK_IMPORTED_MODULE_5__pages_mes_mes__["a" /* MesPage */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */]
+                __WEBPACK_IMPORTED_MODULE_7__pages_ultimo_ultimo__["a" /* UltimoPage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_mes_mes__["a" /* MesPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs__["a" /* TabsPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: []
                 })
@@ -206,14 +232,14 @@ var AppModule = (function () {
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_ultimo_ultimo__["a" /* UltimoPage */],
-                __WEBPACK_IMPORTED_MODULE_5__pages_mes_mes__["a" /* MesPage */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */]
+                __WEBPACK_IMPORTED_MODULE_7__pages_ultimo_ultimo__["a" /* UltimoPage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_mes_mes__["a" /* MesPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs__["a" /* TabsPage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__["a" /* SplashScreen */],
-                __WEBPACK_IMPORTED_MODULE_4__providers_http_provider__["a" /* HttpProvider */],
+                __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_5__providers_http_provider__["a" /* HttpProvider */],
                 { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
             ]
         })
@@ -262,7 +288,7 @@ var MyApp = (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());
@@ -299,7 +325,6 @@ var HttpProvider = (function () {
     //Obtem dados ultimo
     HttpProvider.prototype.obterUltimo = function () {
         return this.http.get('https://nunofcguerreiro.com/api-euromillions-json').map(function (res) { return res.json(); });
-        console.log(this.http.get('https://nunofcguerreiro.com/api-euromillions-json').map(function (res) { return res.json(); }));
     };
     HttpProvider.prototype.obterMes = function () {
         var data = new Date();
