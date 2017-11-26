@@ -37,5 +37,19 @@ export class MesPage {
   			});
   	}
 
+    doRefresh(refresher){
+      this.httpProvider.obterMes().subscribe(
+        ultimo => {
+          this.novoMes = ultimo.drawns;
+      })
+
+      setTimeout(() => {
+        this.httpProvider.obterMes().subscribe(
+          ultimo => {
+            this.novoMes = ultimo.drawns;
+            refresher.complete();
+          })
+      }, 2000);
+    }
 
 }

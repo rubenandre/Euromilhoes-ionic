@@ -38,5 +38,19 @@ export class UltimoPage {
   			});
   	}
 
+    doRefresh(refresher){
+      this.httpProvider.obterUltimo().subscribe(
+        ultimo => {
+          this.novoUltimo = ultimo.drawns;
+      })
+
+      setTimeout(() => {
+        this.httpProvider.obterUltimo().subscribe(
+          ultimo => {
+            this.novoUltimo = ultimo.drawns;
+            refresher.complete();
+          })
+      }, 2000);
+    }
 }
 
