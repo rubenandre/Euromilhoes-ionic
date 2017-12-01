@@ -15,16 +15,16 @@
     </ion-refresher-content>
   </ion-refresher>
 
-  <ion-card *ngFor="let ultimos of novoUltimo">
+  <ion-card *ngFor="let ultimo of novoUltimo">
     <ion-card-header>
-      <h6><b>{{ ultimos.date }}</b></h6>
+      <h6><b>{{ ultimo.data }}</b></h6>
       <hr/>
     </ion-card-header>
     <ion-card-content>
-      <ion-badge color="primary">{{ ultimos.numbers }}</ion-badge>
+      <ion-badge color="primary">{{ ultimo.numeros }}</ion-badge>
     </ion-card-content>
     <ion-card-content>
-      <ion-badge color="orang">{{ ultimos.stars }}</ion-badge>
+      <ion-badge color="orang">{{ ultimo.estrelas }}</ion-badge>
     </ion-card-content>
   </ion-card>
 </ion-content>

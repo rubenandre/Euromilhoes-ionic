@@ -178,7 +178,7 @@ var UltimoPage = (function () {
         var _this = this;
         this.loading.present();
         this.httpProvider.obterUltimo().subscribe(function (ultimo) {
-            _this.novoUltimo = ultimo.drawns;
+            _this.novoUltimo = ultimo;
         }, function (err) {
             console.error("Erro: " + err);
         }, function () {
@@ -189,18 +189,18 @@ var UltimoPage = (function () {
     UltimoPage.prototype.doRefresh = function (refresher) {
         var _this = this;
         this.httpProvider.obterUltimo().subscribe(function (ultimo) {
-            _this.novoUltimo = ultimo.drawns;
+            _this.novoUltimo = ultimo;
         });
         setTimeout(function () {
             _this.httpProvider.obterUltimo().subscribe(function (ultimo) {
-                _this.novoUltimo = ultimo.drawns;
+                _this.novoUltimo = ultimo;
                 refresher.complete();
             });
         }, 2000);
     };
     UltimoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-ultimo',template:/*ion-inline-start:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\ultimo\ultimo.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Último Resultado</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  \n  <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content\n    pullingIcon="arrow-dropdown"\n    pullingText="Puxe para atualizar"\n    refreshingSpinner="circles"\n    refreshingText="Atualizando...">\n    </ion-refresher-content>\n  </ion-refresher>\n\n  <ion-card *ngFor="let ultimos of novoUltimo">\n    <ion-card-header>\n      <h6><b>{{ ultimos.date }}</b></h6>\n      <hr/>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-badge color="primary">{{ ultimos.numbers }}</ion-badge>\n    </ion-card-content>\n    <ion-card-content>\n      <ion-badge color="orang">{{ ultimos.stars }}</ion-badge>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\ultimo\ultimo.html"*/,
+            selector: 'page-ultimo',template:/*ion-inline-start:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\ultimo\ultimo.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Último Resultado</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  \n  <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content\n    pullingIcon="arrow-dropdown"\n    pullingText="Puxe para atualizar"\n    refreshingSpinner="circles"\n    refreshingText="Atualizando...">\n    </ion-refresher-content>\n  </ion-refresher>\n\n  <ion-card *ngFor="let ultimo of novoUltimo">\n    <ion-card-header>\n      <h6><b>{{ ultimo.data }}</b></h6>\n      <hr/>\n    </ion-card-header>\n    <ion-card-content>\n      <ion-badge color="primary">{{ ultimo.numeros }}</ion-badge>\n    </ion-card-content>\n    <ion-card-content>\n      <ion-badge color="orang">{{ ultimo.estrelas }}</ion-badge>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\Users\ruben\Desktop\Euromilhoes-ionic\Euromilhoes-ionic\src\pages\ultimo\ultimo.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_2__providers_http_provider__["a" /* HttpProvider */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_http_provider__["a" /* HttpProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */]])
@@ -411,7 +411,7 @@ var HttpProvider = (function () {
     }
     //Obtem dados ultimo
     HttpProvider.prototype.obterUltimo = function () {
-        return this.http.get('https://nunofcguerreiro.com/api-euromillions-json').map(function (res) { return res.json(); });
+        return this.http.get('https://getbridgeapp.co/api/euromilhoes/resultadoseuromilhoes?ultimo=1').map(function (res) { return res.json(); });
     };
     HttpProvider.prototype.obterMes = function () {
         var data = new Date();
@@ -421,7 +421,7 @@ var HttpProvider = (function () {
         if (mes < 10) {
             nmes = '0' + mes;
         }
-        var url = 'https://nunofcguerreiro.com/api-euromillions-json?result=' + ano + '-' + nmes;
+        var url = 'https://getbridgeapp.co/api/euromilhoes/resultadoseuromilhoes?anomes=' + ano + '-' + nmes;
         console.log(url);
         return this.http.get(url).map(function (res) { return res.json(); });
     };

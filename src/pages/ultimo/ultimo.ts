@@ -26,7 +26,7 @@ export class UltimoPage {
   		this.loading.present();
   		this.httpProvider.obterUltimo().subscribe(
   			ultimo => {
-  				this.novoUltimo = ultimo.drawns;
+  				this.novoUltimo = ultimo;
   			},
   			err => {
   				console.error("Erro: " + err);
@@ -41,13 +41,13 @@ export class UltimoPage {
     doRefresh(refresher){
       this.httpProvider.obterUltimo().subscribe(
         ultimo => {
-          this.novoUltimo = ultimo.drawns;
+          this.novoUltimo = ultimo;
       })
 
       setTimeout(() => {
         this.httpProvider.obterUltimo().subscribe(
           ultimo => {
-            this.novoUltimo = ultimo.drawns;
+            this.novoUltimo = ultimo;
             refresher.complete();
           })
       }, 2000);
