@@ -27,3 +27,4 @@ Algumas Imagens do projeto:
 ![alt text](https://raw.githubusercontent.com/rubenandre/Euromilhoes-ionic/master/imagens/home.png "Home Screen")
 
 Link para download:
+[Download](https://github.com/rubenandre/Euromilhoes-ionic/blob/master/imagens/Euromilhoes.apk?raw=true)
