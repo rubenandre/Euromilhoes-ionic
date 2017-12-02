@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, LoadingController } from 'ionic-angular';
+import { NavController, LoadingController, ToastController } from 'ionic-angular';
 import { HttpProvider } from '../../providers/http-provider'
 
 @Component({
@@ -10,7 +10,7 @@ import { HttpProvider } from '../../providers/http-provider'
 export class MesPage {
 	loading: any;
 	novoMes: any;
-  	constructor(public navCtrl: NavController, private httpProvider: HttpProvider, public loadingCtrl: LoadingController) {
+  	constructor(public navCtrl: NavController, private httpProvider: HttpProvider, public loadingCtrl: LoadingController, private toastCtrl: ToastController) {
 
   		this.loading = this.loadingCtrl.create({
   			content: `
@@ -25,7 +25,7 @@ export class MesPage {
   		this.loading.present();
   		this.httpProvider.obterMes().subscribe(
   			ultimo => {
-  				this.novoMes = ultimo.drawns;
+  				this.novoMes = ultimo;
   			},
   			err => {
   				console.error("Erro: " + err);
@@ -40,13 +40,13 @@ export class MesPage {
     doRefresh(refresher){
       this.httpProvider.obterMes().subscribe(
         ultimo => {
-          this.novoMes = ultimo.drawns;
+          this.novoMes = ultimo;
       })
 
       setTimeout(() => {
         this.httpProvider.obterMes().subscribe(
           ultimo => {
-            this.novoMes = ultimo.drawns;
+            this.novoMes = ultimo;
             refresher.complete();
           })
       }, 2000);
