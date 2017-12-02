@@ -24,8 +24,5 @@ Como a API é recente ainda não apresenta dados atecedentes à 11/2017
 
 Algumas Imagens do projeto:
 
-Splash Screen: 
 ![alt text](https://raw.githubusercontent.com/rubenandre/Euromilhoes-ionic/master/imagens/splash.png "Splash Screen")
-
-Home Screen:
 ![alt text](https://raw.githubusercontent.com/rubenandre/Euromilhoes-ionic/master/imagens/home.png "Home Screen")
