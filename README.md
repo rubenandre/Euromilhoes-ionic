@@ -3,10 +3,9 @@
 A aplicação Resultados Euromilhões, foi desenvolvida por mim, assim como a Api que é utilizada nesta.
 
 Em relação à aplicação, foi desenvolvida com o framework JS, Ionic, com integração à minha api desenvolvida no site: 
-https://getbridgeapp.co/ - automatic!
 [Get Bridge App](https://getbridgeapp.co/)
 
-Link da Api: (https://getbridgeapp.co/api/euromilhoes/resultadoseuromilhoes) 
+Link da Api: https://getbridgeapp.co/api/euromilhoes/resultadoseuromilhoes
 
 Alguns endpoints da API são:
 
@@ -26,3 +25,5 @@ Algumas Imagens do projeto:
 
 ![alt text](https://raw.githubusercontent.com/rubenandre/Euromilhoes-ionic/master/imagens/splash.png "Splash Screen")
 ![alt text](https://raw.githubusercontent.com/rubenandre/Euromilhoes-ionic/master/imagens/home.png "Home Screen")
+
+Link para download:
