@@ -9,7 +9,7 @@ export class HttpProvider {
 
     //Obtem dados ultimo
     obterUltimo(){
-        return this.http.get('https://getbridgeapp.co/api/euromilhoes/resultadoseuromilhoes?ultimo=1').map(res => res.json());
+        return this.http.get('https://nunofcguerreiro.com/api-euromillions-json').map(res => res.json());
     }
     
     obterMes(){
@@ -20,7 +20,7 @@ export class HttpProvider {
         if (mes < 10) {
             nmes = '0' + mes; 
         }
-        var url = 'https://getbridgeapp.co/api/euromilhoes/resultadoseuromilhoes?anomes=' + ano + '-' + nmes;
+        var url = 'https://nunofcguerreiro.com/api-euromillions-json?result=' + ano + '-' + nmes;
         console.log(url);
         return this.http.get(url).map(res => res.json());
     }
