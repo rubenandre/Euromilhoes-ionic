@@ -5,7 +5,6 @@ import { MyApp } from './app.component';
 import { HttpModule } from '@angular/http'; 
 import { HttpProvider } from '../providers/http-provider'
 
-import { MesPage } from '../pages/mes/mes';
 import { UltimoPage } from '../pages/ultimo/ultimo';
 import { SobrePage } from '../pages/sobre/sobre';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -17,7 +16,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     UltimoPage,
-    MesPage,
     SobrePage,
     TabsPage
   ],
@@ -30,7 +28,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     UltimoPage,
-    MesPage,
     SobrePage,
     TabsPage
   ],

@@ -1,30 +1,28 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Último Resultado</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Último Resultado</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  
-  <ion-refresher (ionRefresh)="doRefresh($event)">
-    <ion-refresher-content
-    pullingIcon="arrow-dropdown"
-    pullingText="Puxe para atualizar"
-    refreshingSpinner="circles"
-    refreshingText="Atualizando...">
-    </ion-refresher-content>
-  </ion-refresher>
 
-  <ion-card *ngFor="let ultimo of novoUltimo">
-    <ion-card-header>
-      <h6><b>{{ ultimo.date }}</b></h6>
-      <hr/>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-badge color="primary">{{ ultimo.numbers}}</ion-badge>
-    </ion-card-content>
-    <ion-card-content>
-      <ion-badge color="orang">{{ ultimo.stars }}</ion-badge>
-    </ion-card-content>
-  </ion-card>
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Puxe para atualizar"
+                               refreshingSpinner="circles"
+                               refreshingText="Atualizando...">
+        </ion-refresher-content>
+    </ion-refresher>
+
+    <ion-card *ngFor="let ultimo of resultadoEuromilhoes">
+        <ion-card-header>
+            <h6><b>{{ ultimo.jogo }} - {{ ultimo.date }}</b></h6>
+            <hr/>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-badge color="primary">{{ ultimo.numeros.join(' ') }}</ion-badge>
+        </ion-card-content>
+        <ion-card-content *ngIf="ultimo.estrelas">
+            <ion-badge color="orang">{{ ultimo.estrelas.join(' ') }}</ion-badge>
+        </ion-card-content>
+    </ion-card>
 </ion-content>

@@ -1,1 +1,439 @@
-webpackJsonp([0],{133:function(l,n){function u(l){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+l+"'.")})}u.keys=function(){return[]},u.resolve=u,l.exports=u,u.id=133},164:function(l,n){function u(l){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+l+"'.")})}u.keys=function(){return[]},u.resolve=u,l.exports=u,u.id=164},192:function(l,n,u){"use strict";function a(l){return c._19(0,[(l()(),c.Z(0,0,null,null,2,"ion-nav",[],null,null,null,M.b,M.a)),c._15(6144,null,S.a,null,[U.a]),c.Y(2,4374528,null,0,U.a,[[2,C.a],[2,D.a],F.a,L.a,O.a,c.j,c.u,c.z,c.i,A.l,V.a,[2,$.a],E.a,c.k],{root:[0,"root"]},null),(l()(),c._18(-1,null,["\n"]))],function(l,n){l(n,2,0,n.component.rootPage)},null)}function t(l){return c._19(0,[(l()(),c.Z(0,0,null,null,28,"ion-card",[],null,null,null,null,null)),c.Y(1,16384,null,0,G.a,[L.a,c.j,c.z],null,null),(l()(),c._18(-1,null,["\n    "])),(l()(),c.Z(3,0,null,null,8,"ion-card-header",[],null,null,null,null,null)),c.Y(4,16384,null,0,B.a,[L.a,c.j,c.z],null,null),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(6,0,null,null,2,"h6",[],null,null,null,null,null)),(l()(),c.Z(7,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),c._18(8,null,["",""])),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(10,0,null,null,0,"hr",[],null,null,null,null,null)),(l()(),c._18(-1,null,["\n    "])),(l()(),c._18(-1,null,["\n    "])),(l()(),c.Z(13,0,null,null,6,"ion-card-content",[],null,null,null,null,null)),c.Y(14,16384,null,0,J.a,[L.a,c.j,c.z],null,null),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(16,0,null,null,2,"ion-badge",[["color","primary"]],null,null,null,null,null)),c.Y(17,16384,null,0,N.a,[L.a,c.j,c.z],{color:[0,"color"]},null),(l()(),c._18(18,null,["",""])),(l()(),c._18(-1,null,["\n    "])),(l()(),c._18(-1,null,["\n    "])),(l()(),c.Z(21,0,null,null,6,"ion-card-content",[],null,null,null,null,null)),c.Y(22,16384,null,0,J.a,[L.a,c.j,c.z],null,null),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(24,0,null,null,2,"ion-badge",[["color","orang"]],null,null,null,null,null)),c.Y(25,16384,null,0,N.a,[L.a,c.j,c.z],{color:[0,"color"]},null),(l()(),c._18(26,null,["",""])),(l()(),c._18(-1,null,["\n    "])),(l()(),c._18(-1,null,["\n  "]))],function(l,n){l(n,17,0,"primary");l(n,25,0,"orang")},function(l,n){l(n,8,0,n.context.$implicit.data);l(n,18,0,n.context.$implicit.numeros);l(n,26,0,n.context.$implicit.estrelas)})}function o(l){return c._19(0,[(l()(),c.Z(0,0,null,null,10,"ion-header",[],null,null,null,null,null)),c.Y(1,16384,null,0,W.a,[L.a,c.j,c.z,[2,C.a]],null,null),(l()(),c._18(-1,null,["\n  "])),(l()(),c.Z(3,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,H.b,H.a)),c.Y(4,49152,null,0,K.a,[F.a,[2,C.a],[2,D.a],L.a,c.j,c.z],null,null),(l()(),c._18(-1,3,["\n    "])),(l()(),c.Z(6,0,null,3,2,"ion-title",[],null,null,null,Q.b,Q.a)),c.Y(7,49152,null,0,ll.a,[L.a,c.j,c.z,[2,nl.a],[2,K.a]],null,null),(l()(),c._18(-1,0,["Último Resultado"])),(l()(),c._18(-1,3,["\n  "])),(l()(),c._18(-1,null,["\n"])),(l()(),c._18(-1,null,["\n\n"])),(l()(),c.Z(12,0,null,null,13,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,ul.b,ul.a)),c.Y(13,4374528,null,0,al.a,[L.a,O.a,E.a,c.j,c.z,F.a,tl.a,c.u,[2,C.a],[2,D.a]],null,null),(l()(),c._18(-1,1,["\n  \n  "])),(l()(),c.Z(15,0,null,2,6,"ion-refresher",[],[[2,"refresher-active",null],[4,"top",null]],[[null,"ionRefresh"]],function(l,n,u){var a=!0;if("ionRefresh"===n){a=!1!==l.component.doRefresh(u)&&a}return a},null,null)),c.Y(16,212992,null,0,ol.a,[O.a,al.a,c.u,A.l],null,{ionRefresh:"ionRefresh"}),(l()(),c._18(-1,null,["\n    "])),(l()(),c.Z(18,0,null,null,2,"ion-refresher-content",[["pullingIcon","arrow-dropdown"],["pullingText","Puxe para atualizar"],["refreshingSpinner","circles"],["refreshingText","Atualizando..."]],[[1,"state",0]],null,null,el.b,el.a)),c.Y(19,114688,null,0,il.a,[ol.a,L.a],{pullingIcon:[0,"pullingIcon"],pullingText:[1,"pullingText"],refreshingSpinner:[2,"refreshingSpinner"],refreshingText:[3,"refreshingText"]},null),(l()(),c._18(-1,null,["\n    "])),(l()(),c._18(-1,null,["\n  "])),(l()(),c._18(-1,1,["\n\n  "])),(l()(),c.U(16777216,null,1,1,null,t)),c.Y(24,802816,null,0,rl.h,[c.I,c.F,c.p],{ngForOf:[0,"ngForOf"]},null),(l()(),c._18(-1,1,["\n"])),(l()(),c._18(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,16,0);l(n,19,0,"arrow-dropdown","Puxe para atualizar","circles","Atualizando...");l(n,24,0,u.novoUltimo)},function(l,n){l(n,3,0,c._13(n,4)._hidden,c._13(n,4)._sbPadding);l(n,12,0,c._13(n,13).statusbarPadding,c._13(n,13)._hasRefresher);l(n,15,0,"inactive"!==c._13(n,16).state,c._13(n,16)._top);l(n,18,0,c._13(n,19).r.state)})}function e(l){return c._19(0,[(l()(),c.Z(0,0,null,null,28,"ion-card",[],null,null,null,null,null)),c.Y(1,16384,null,0,G.a,[L.a,c.j,c.z],null,null),(l()(),c._18(-1,null,["\n    "])),(l()(),c.Z(3,0,null,null,8,"ion-card-header",[],null,null,null,null,null)),c.Y(4,16384,null,0,B.a,[L.a,c.j,c.z],null,null),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(6,0,null,null,2,"h6",[],null,null,null,null,null)),(l()(),c.Z(7,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),c._18(8,null,["",""])),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(10,0,null,null,0,"hr",[],null,null,null,null,null)),(l()(),c._18(-1,null,["\n    "])),(l()(),c._18(-1,null,["\n    "])),(l()(),c.Z(13,0,null,null,6,"ion-card-content",[],null,null,null,null,null)),c.Y(14,16384,null,0,J.a,[L.a,c.j,c.z],null,null),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(16,0,null,null,2,"ion-badge",[["color","primary"]],null,null,null,null,null)),c.Y(17,16384,null,0,N.a,[L.a,c.j,c.z],{color:[0,"color"]},null),(l()(),c._18(18,null,["",""])),(l()(),c._18(-1,null,["\n    "])),(l()(),c._18(-1,null,["\n    "])),(l()(),c.Z(21,0,null,null,6,"ion-card-content",[],null,null,null,null,null)),c.Y(22,16384,null,0,J.a,[L.a,c.j,c.z],null,null),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(24,0,null,null,2,"ion-badge",[["color","orang"]],null,null,null,null,null)),c.Y(25,16384,null,0,N.a,[L.a,c.j,c.z],{color:[0,"color"]},null),(l()(),c._18(26,null,["",""])),(l()(),c._18(-1,null,["\n    "])),(l()(),c._18(-1,null,["\n  "]))],function(l,n){l(n,17,0,"primary");l(n,25,0,"orang")},function(l,n){l(n,8,0,n.context.$implicit.data);l(n,18,0,n.context.$implicit.numeros);l(n,26,0,n.context.$implicit.estrelas)})}function i(l){return c._19(0,[(l()(),c.Z(0,0,null,null,10,"ion-header",[],null,null,null,null,null)),c.Y(1,16384,null,0,W.a,[L.a,c.j,c.z,[2,C.a]],null,null),(l()(),c._18(-1,null,["\n  "])),(l()(),c.Z(3,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,H.b,H.a)),c.Y(4,49152,null,0,K.a,[F.a,[2,C.a],[2,D.a],L.a,c.j,c.z],null,null),(l()(),c._18(-1,3,["\n    "])),(l()(),c.Z(6,0,null,3,2,"ion-title",[],null,null,null,Q.b,Q.a)),c.Y(7,49152,null,0,ll.a,[L.a,c.j,c.z,[2,nl.a],[2,K.a]],null,null),(l()(),c._18(-1,0,["\n      Resultados por Mês\n    "])),(l()(),c._18(-1,3,["\n  "])),(l()(),c._18(-1,null,["\n"])),(l()(),c._18(-1,null,["\n\n"])),(l()(),c.Z(12,0,null,null,13,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,ul.b,ul.a)),c.Y(13,4374528,null,0,al.a,[L.a,O.a,E.a,c.j,c.z,F.a,tl.a,c.u,[2,C.a],[2,D.a]],null,null),(l()(),c._18(-1,1,["\n\n  "])),(l()(),c.Z(15,0,null,2,6,"ion-refresher",[],[[2,"refresher-active",null],[4,"top",null]],[[null,"ionRefresh"]],function(l,n,u){var a=!0;if("ionRefresh"===n){a=!1!==l.component.doRefresh(u)&&a}return a},null,null)),c.Y(16,212992,null,0,ol.a,[O.a,al.a,c.u,A.l],null,{ionRefresh:"ionRefresh"}),(l()(),c._18(-1,null,["\n    "])),(l()(),c.Z(18,0,null,null,2,"ion-refresher-content",[["pullingIcon","arrow-dropdown"],["pullingText","Puxe para atualizar"],["refreshingSpinner","circles"],["refreshingText","Atualizando..."]],[[1,"state",0]],null,null,el.b,el.a)),c.Y(19,114688,null,0,il.a,[ol.a,L.a],{pullingIcon:[0,"pullingIcon"],pullingText:[1,"pullingText"],refreshingSpinner:[2,"refreshingSpinner"],refreshingText:[3,"refreshingText"]},null),(l()(),c._18(-1,null,["\n    "])),(l()(),c._18(-1,null,["\n  "])),(l()(),c._18(-1,1,["\n\n  "])),(l()(),c.U(16777216,null,1,1,null,e)),c.Y(24,802816,null,0,rl.h,[c.I,c.F,c.p],{ngForOf:[0,"ngForOf"]},null),(l()(),c._18(-1,1,["\n"]))],function(l,n){var u=n.component;l(n,16,0);l(n,19,0,"arrow-dropdown","Puxe para atualizar","circles","Atualizando...");l(n,24,0,u.novoMes)},function(l,n){l(n,3,0,c._13(n,4)._hidden,c._13(n,4)._sbPadding);l(n,12,0,c._13(n,13).statusbarPadding,c._13(n,13)._hasRefresher);l(n,15,0,"inactive"!==c._13(n,16).state,c._13(n,16)._top);l(n,18,0,c._13(n,19).r.state)})}function r(l){return c._19(0,[(l()(),c.Z(0,0,null,null,10,"ion-header",[],null,null,null,null,null)),c.Y(1,16384,null,0,W.a,[L.a,c.j,c.z,[2,C.a]],null,null),(l()(),c._18(-1,null,["\n  "])),(l()(),c.Z(3,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,H.b,H.a)),c.Y(4,49152,null,0,K.a,[F.a,[2,C.a],[2,D.a],L.a,c.j,c.z],null,null),(l()(),c._18(-1,3,["\n    "])),(l()(),c.Z(6,0,null,3,2,"ion-title",[],null,null,null,Q.b,Q.a)),c.Y(7,49152,null,0,ll.a,[L.a,c.j,c.z,[2,nl.a],[2,K.a]],null,null),(l()(),c._18(-1,0,["\n      Sobre\n    "])),(l()(),c._18(-1,3,["\n  "])),(l()(),c._18(-1,null,["\n"])),(l()(),c._18(-1,null,["\n\n"])),(l()(),c.Z(12,0,null,null,77,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,ul.b,ul.a)),c.Y(13,4374528,null,0,al.a,[L.a,O.a,E.a,c.j,c.z,F.a,tl.a,c.u,[2,C.a],[2,D.a]],null,null),(l()(),c._18(-1,1,["\n\t"])),(l()(),c.Z(15,0,null,1,3,"div",[["id","img"]],null,null,null,null,null)),(l()(),c._18(-1,null,["\n\t\t"])),(l()(),c.Z(17,0,null,null,0,"img",[["src","https://avatars1.githubusercontent.com/u/9402773?s=460&v=4"]],null,null,null,null,null)),(l()(),c._18(-1,null,["\n\t"])),(l()(),c._18(-1,1,["\n  "])),(l()(),c.Z(20,0,null,1,68,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,ul.b,ul.a)),c.Y(21,4374528,null,0,al.a,[L.a,O.a,E.a,c.j,c.z,F.a,tl.a,c.u,[2,C.a],[2,D.a]],null,null),(l()(),c._18(-1,1,["\n    "])),(l()(),c.Z(23,0,null,1,64,"ion-list",[],null,null,null,null,null)),c.Y(24,16384,null,0,fl.a,[L.a,c.j,c.z,O.a,A.l,E.a],null,null),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(26,0,null,null,6,"ion-list-header",[["class","item"]],null,null,null,pl.b,pl.a)),c.Y(27,1097728,null,3,gl.a,[ml.a,L.a,c.j,c.z,[2,Yl.a]],null,null),c._16(335544320,1,{contentLabel:0}),c._16(603979776,2,{_buttons:1}),c._16(603979776,3,{_icons:1}),c.Y(31,16384,null,0,Zl.a,[L.a,c.z,c.j,[8,null]],null,null),(l()(),c._18(-1,2,["\n        Sobre Aplicação\n      "])),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(34,0,null,null,6,"ion-item",[["class","item item-block"]],null,null,null,pl.b,pl.a)),c.Y(35,1097728,null,3,gl.a,[ml.a,L.a,c.j,c.z,[2,Yl.a]],null,null),c._16(335544320,4,{contentLabel:0}),c._16(603979776,5,{_buttons:1}),c._16(603979776,6,{_icons:1}),c.Y(39,16384,null,0,vl.a,[],null,null),(l()(),c._18(-1,2,["Nome: Resultados Euromilhões"])),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(42,0,null,null,6,"ion-item",[["class","item item-block"]],null,null,null,pl.b,pl.a)),c.Y(43,1097728,null,3,gl.a,[ml.a,L.a,c.j,c.z,[2,Yl.a]],null,null),c._16(335544320,7,{contentLabel:0}),c._16(603979776,8,{_buttons:1}),c._16(603979776,9,{_icons:1}),c.Y(47,16384,null,0,vl.a,[],null,null),(l()(),c._18(-1,2,["Versão: 1.0.0"])),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(50,0,null,null,6,"ion-item",[["class","item item-block"]],null,null,null,pl.b,pl.a)),c.Y(51,1097728,null,3,gl.a,[ml.a,L.a,c.j,c.z,[2,Yl.a]],null,null),c._16(335544320,10,{contentLabel:0}),c._16(603979776,11,{_buttons:1}),c._16(603979776,12,{_icons:1}),c.Y(55,16384,null,0,vl.a,[],null,null),(l()(),c._18(-1,2,["Última Atualização: 26/11/2017"])),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(58,0,null,null,6,"ion-list-header",[["class","item"]],null,null,null,pl.b,pl.a)),c.Y(59,1097728,null,3,gl.a,[ml.a,L.a,c.j,c.z,[2,Yl.a]],null,null),c._16(335544320,13,{contentLabel:0}),c._16(603979776,14,{_buttons:1}),c._16(603979776,15,{_icons:1}),c.Y(63,16384,null,0,Zl.a,[L.a,c.z,c.j,[8,null]],null,null),(l()(),c._18(-1,2,["\n        Desenvolvedor\n      "])),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(66,0,null,null,6,"ion-item",[["class","item item-block"]],null,null,null,pl.b,pl.a)),c.Y(67,1097728,null,3,gl.a,[ml.a,L.a,c.j,c.z,[2,Yl.a]],null,null),c._16(335544320,16,{contentLabel:0}),c._16(603979776,17,{_buttons:1}),c._16(603979776,18,{_icons:1}),c.Y(71,16384,null,0,vl.a,[],null,null),(l()(),c._18(-1,2,["Rúben Silva"])),(l()(),c._18(-1,null,["\n      "])),(l()(),c.Z(74,0,null,null,12,"ion-item",[["class","item item-block"]],null,null,null,pl.b,pl.a)),c.Y(75,1097728,null,3,gl.a,[ml.a,L.a,c.j,c.z,[2,Yl.a]],null,null),c._16(335544320,19,{contentLabel:0}),c._16(603979776,20,{_buttons:1}),c._16(603979776,21,{_icons:1}),c.Y(79,16384,null,0,vl.a,[],null,null),(l()(),c._18(-1,2,["\n        "])),(l()(),c.Z(81,0,null,0,1,"ion-icon",[["item-start",""],["name","logo-github"],["role","img"]],[[2,"hide",null]],null,null,null,null)),c.Y(82,147456,[[21,4]],0,jl.a,[L.a,c.j,c.z],{name:[0,"name"]},null),(l()(),c._18(-1,2,["\n        "])),(l()(),c.Z(84,0,null,2,1,"a",[["href","https://github.com/rubenandre"]],null,null,null,null,null)),(l()(),c._18(-1,null,["Github"])),(l()(),c._18(-1,2,["\n      "])),(l()(),c._18(-1,null,["\n    "])),(l()(),c._18(-1,1,["\n  "])),(l()(),c._18(-1,1,["\n"]))],function(l,n){l(n,82,0,"logo-github")},function(l,n){l(n,3,0,c._13(n,4)._hidden,c._13(n,4)._sbPadding);l(n,12,0,c._13(n,13).statusbarPadding,c._13(n,13)._hasRefresher);l(n,20,0,c._13(n,21).statusbarPadding,c._13(n,21)._hasRefresher);l(n,81,0,c._13(n,82)._hidden)})}function s(l){return c._19(0,[(l()(),c.Z(0,0,null,null,12,"ion-tabs",[["color","orang"]],null,null,null,Il.b,Il.a)),c._15(6144,null,S.a,null,[xl.a]),c.Y(2,4374528,null,0,xl.a,[[2,D.a],[2,C.a],F.a,L.a,c.j,O.a,c.z,$.a,tl.a],{color:[0,"color"]},null),(l()(),c._18(-1,0,["\n  "])),(l()(),c.Z(4,0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","ios-add-circle-outline"],["tabTitle","Último Resultado"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,yl.b,yl.a)),c.Y(5,245760,null,0,Pl.a,[xl.a,F.a,L.a,O.a,c.j,c.u,c.z,c.i,c.g,A.l,V.a,[2,$.a],E.a,c.k],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(l()(),c._18(-1,0,["\n  "])),(l()(),c.Z(7,0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","ios-archive-outline"],["tabTitle","Resultados do Mês"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,yl.b,yl.a)),c.Y(8,245760,null,0,Pl.a,[xl.a,F.a,L.a,O.a,c.j,c.u,c.z,c.i,c.g,A.l,V.a,[2,$.a],E.a,c.k],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(l()(),c._18(-1,0,["\n  "])),(l()(),c.Z(10,0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","ios-information-circle-outline"],["tabTitle","Sobre"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,yl.b,yl.a)),c.Y(11,245760,null,0,Pl.a,[xl.a,F.a,L.a,O.a,c.j,c.u,c.z,c.i,c.g,A.l,V.a,[2,$.a],E.a,c.k],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(l()(),c._18(-1,0,["\n"])),(l()(),c._18(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,2,0,"orang");l(n,5,0,u.tab1Root,"Último Resultado","ios-add-circle-outline");l(n,8,0,u.tab2Root,"Resultados do Mês","ios-archive-outline");l(n,11,0,u.tab3Root,"Sobre","ios-information-circle-outline")},function(l,n){l(n,4,0,c._13(n,5)._tabId,c._13(n,5)._btnId);l(n,7,0,c._13(n,8)._tabId,c._13(n,8)._btnId);l(n,10,0,c._13(n,11)._tabId,c._13(n,11)._btnId)})}Object.defineProperty(n,"__esModule",{value:!0});var _=u(29),c=u(0),b=(u(5),u(48),u(86)),d=u(87),h=u(62),f=(u(226),function(){function l(l){this.http=l}return l.prototype.obterUltimo=function(){return this.http.get("https://getbridgeapp.co/api/euromilhoes/resultadoseuromilhoes?ultimo=1").map(function(l){return l.json()})},l.prototype.obterMes=function(){var l=new Date,n=l.getMonth()+1,u=n.toString(),a=l.getFullYear();n<10&&(u="0"+n);var t="https://getbridgeapp.co/api/euromilhoes/resultadoseuromilhoes?anomes="+a+"-"+u;return console.log(t),this.http.get(t).map(function(l){return l.json()})},l}()),p=function(){function l(l,n,u,a){this.navCtrl=l,this.httpProvider=n,this.loadingCtrl=u,this.toastCtrl=a,this.loading=this.loadingCtrl.create({content:"\n  \t\t\t<ion-spinner></ion-spinner>"}),this.obterDadosMes()}return l.prototype.obterDadosMes=function(){var l=this;this.loading.present(),this.httpProvider.obterMes().subscribe(function(n){l.novoMes=n},function(l){console.error("Erro: "+l)},function(){l.loading.dismiss(),console.log("Informações obtidas com sucesso")})},l.prototype.doRefresh=function(l){var n=this;this.httpProvider.obterMes().subscribe(function(l){n.novoMes=l}),setTimeout(function(){n.httpProvider.obterMes().subscribe(function(u){n.novoMes=u,l.complete()})},2e3)},l}(),g=function(){function l(l,n,u){this.navCtrl=l,this.httpProvider=n,this.loadingCtrl=u,this.loading=this.loadingCtrl.create({content:"\n  \t\t\t<ion-spinner></ion-spinner>"}),this.obterDadosUltimo()}return l.prototype.obterDadosUltimo=function(){var l=this;this.loading.present(),this.httpProvider.obterUltimo().subscribe(function(n){l.novoUltimo=n},function(l){console.error("Erro: "+l)},function(){l.loading.dismiss(),console.log("Informações obtidas com sucesso")})},l.prototype.doRefresh=function(l){var n=this;this.httpProvider.obterUltimo().subscribe(function(l){n.novoUltimo=l}),setTimeout(function(){n.httpProvider.obterUltimo().subscribe(function(u){n.novoUltimo=u,l.complete()})},2e3)},l}(),m=function(){return function(l){this.navCtrl=l}}(),Y=function(){return function(){this.tab1Root=g,this.tab2Root=p,this.tab3Root=m}}(),Z=function(){return function(l,n,u){this.rootPage=Y,l.ready().then(function(){n.styleDefault(),u.hide()})}}(),v=function(){return function(){}}(),j=u(49),z=u(227),R=u(228),I=u(229),x=u(230),y=u(231),P=u(232),T=u(233),k=u(234),w=u(235),M=u(236),S=u(28),U=u(57),C=u(4),D=u(14),F=u(7),L=u(1),O=u(3),A=u(6),V=u(23),$=u(13),E=u(8),X=c.X({encapsulation:2,styles:[],data:{}}),q=c.V("ng-component",Z,function(l){return c._19(0,[(l()(),c.Z(0,0,null,null,1,"ng-component",[],null,null,null,a,X)),c.Y(1,49152,null,0,Z,[O.a,b.a,d.a],null,null)],null,null)},{},{},[]),G=u(67),B=u(69),J=u(68),N=u(52),W=u(61),H=u(120),K=u(24),Q=u(121),ll=u(44),nl=u(35),ul=u(122),al=u(20),tl=u(22),ol=u(42),el=u(191),il=u(59),rl=u(10),sl=u(56),_l=c.X({encapsulation:2,styles:[],data:{}}),cl=c.V("page-ultimo",g,function(l){return c._19(0,[(l()(),c.Z(0,0,null,null,2,"page-ultimo",[],null,null,null,o,_l)),c._15(512,null,f,f,[h.d]),c.Y(2,49152,null,0,g,[D.a,f,sl.a],null,null)],null,null)},{},{},[]),bl=u(85),dl=c.X({encapsulation:2,styles:[],data:{}}),hl=c.V("page-mes",p,function(l){return c._19(0,[(l()(),c.Z(0,0,null,null,2,"page-mes",[],null,null,null,i,dl)),c._15(512,null,f,f,[h.d]),c.Y(2,49152,null,0,p,[D.a,f,sl.a,bl.a],null,null)],null,null)},{},{},[]),fl=u(55),pl=u(190),gl=u(18),ml=u(16),Yl=u(40),Zl=u(75),vl=u(73),jl=u(27),zl=c.X({encapsulation:2,styles:[],data:{}}),Rl=c.V("page-sobre",m,function(l){return c._19(0,[(l()(),c.Z(0,0,null,null,1,"page-sobre",[],null,null,null,r,zl)),c.Y(1,49152,null,0,m,[D.a],null,null)],null,null)},{},{},[]),Il=u(237),xl=u(43),yl=u(238),Pl=u(81),Tl=c.X({encapsulation:2,styles:[],data:{}}),kl=c.V("ng-component",Y,function(l){return c._19(0,[(l()(),c.Z(0,0,null,null,1,"ng-component",[],null,null,null,s,Tl)),c.Y(1,49152,null,0,Y,[],null,null)],null,null)},{},{},[]),wl=u(119),Ml=u(19),Sl=u(96),Ul=u(98),Cl=u(116),Dl=u(34),Fl=u(186),Ll=u(51),Ol=u(41),Al=u(103),Vl=u(70),$l=u(108),El=u(115),Xl=u(185),ql=u(117),Gl=u(31),Bl=u(102),Jl=u(118),Nl=c.W(v,[j.b],function(l){return c._10([c._11(512,c.i,c.S,[[8,[z.a,R.a,I.a,x.a,y.a,P.a,T.a,k.a,w.a,q,cl,hl,Rl,kl]],[3,c.i],c.s]),c._11(5120,c.r,c._9,[[3,c.r]]),c._11(4608,rl.k,rl.j,[c.r,[2,rl.s]]),c._11(5120,c.b,c._0,[]),c._11(5120,c.p,c._6,[]),c._11(5120,c.q,c._7,[]),c._11(4608,_.c,_.q,[rl.c]),c._11(6144,c.D,null,[_.c]),c._11(4608,_.f,wl.a,[]),c._11(5120,_.d,function(l,n,u,a,t){return[new _.k(l,n),new _.o(u),new _.n(a,t)]},[rl.c,c.u,rl.c,rl.c,_.f]),c._11(4608,_.e,_.e,[_.d,c.u]),c._11(135680,_.m,_.m,[rl.c]),c._11(4608,_.l,_.l,[_.e,_.m]),c._11(6144,c.B,null,[_.l]),c._11(6144,_.p,null,[_.m]),c._11(4608,c.G,c.G,[c.u]),c._11(4608,_.h,_.h,[rl.c]),c._11(4608,_.i,_.i,[rl.c]),c._11(4608,h.c,h.c,[]),c._11(4608,h.g,h.b,[]),c._11(5120,h.i,h.j,[]),c._11(4608,h.h,h.h,[h.c,h.g,h.i]),c._11(4608,h.f,h.a,[]),c._11(5120,h.d,h.k,[h.h,h.f]),c._11(4608,Ml.k,Ml.k,[]),c._11(4608,Ml.c,Ml.c,[]),c._11(4608,Sl.a,Sl.a,[F.a,L.a]),c._11(4608,Ul.a,Ul.a,[F.a,L.a]),c._11(4608,Cl.a,Cl.a,[]),c._11(4608,ml.a,ml.a,[]),c._11(4608,Dl.a,Dl.a,[O.a]),c._11(4608,tl.a,tl.a,[L.a,O.a,c.u,E.a]),c._11(4608,sl.a,sl.a,[F.a,L.a]),c._11(5120,rl.f,Fl.b,[rl.q,[2,rl.a],L.a]),c._11(4608,rl.e,rl.e,[rl.f]),c._11(5120,Ll.b,Ll.d,[F.a,Ll.a]),c._11(5120,$.a,$.b,[F.a,Ll.b,rl.e,Ol.b,c.i]),c._11(4608,Al.a,Al.a,[F.a,L.a,$.a]),c._11(4608,Vl.a,Vl.a,[F.a,L.a]),c._11(4608,$l.a,$l.a,[F.a,L.a,$.a]),c._11(4608,El.a,El.a,[L.a,O.a,E.a,F.a,A.l]),c._11(4608,bl.a,bl.a,[F.a,L.a]),c._11(4608,V.a,V.a,[O.a,L.a]),c._11(4608,b.a,b.a,[]),c._11(4608,d.a,d.a,[]),c._11(4608,f,f,[h.d]),c._11(512,rl.b,rl.b,[]),c._11(512,c.k,Xl.a,[]),c._11(256,L.b,{},[]),c._11(1024,ql.a,ql.b,[]),c._11(1024,O.a,O.b,[_.b,ql.a,c.u]),c._11(1024,L.a,L.c,[L.b,O.a]),c._11(512,E.a,E.a,[O.a]),c._11(512,Gl.a,Gl.a,[]),c._11(512,F.a,F.a,[L.a,O.a,[2,Gl.a]]),c._11(512,A.l,A.l,[F.a]),c._11(256,Ll.a,{links:[]},[]),c._11(512,c.h,c.h,[]),c._11(512,Bl.a,Bl.a,[c.h]),c._11(1024,Ol.b,Ol.c,[Bl.a,c.o]),c._11(1024,c.c,function(l,n,u,a,t,o,e,i,r,s,c,b,d){return[_.s(l),Jl.a(n),Cl.b(u,a),El.b(t,o,e,i,r),Ol.d(s,c,b,d)]},[[2,c.t],L.a,O.a,E.a,L.a,O.a,E.a,F.a,A.l,L.a,Ll.a,Ol.b,c.u]),c._11(512,c.d,c.d,[[2,c.c]]),c._11(131584,c.f,c.f,[c.u,c.T,c.o,c.k,c.i,c.d]),c._11(512,c.e,c.e,[c.f]),c._11(512,_.a,_.a,[[3,_.a]]),c._11(512,h.e,h.e,[]),c._11(512,Ml.j,Ml.j,[]),c._11(512,Ml.d,Ml.d,[]),c._11(512,Ml.i,Ml.i,[]),c._11(512,Fl.a,Fl.a,[]),c._11(512,v,v,[]),c._11(256,j.a,Z,[]),c._11(256,rl.a,"/",[])])});Object(c.M)(),Object(_.j)().bootstrapModuleFactory(Nl)}},[192]);
+webpackJsonp([0],{
+
+/***/ 262:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 262;
+
+/***/ }),
+
+/***/ 303:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 303;
+
+/***/ }),
+
+/***/ 347:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ultimo_ultimo__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sobre_sobre__ = __webpack_require__(465);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var TabsPage = (function () {
+    function TabsPage() {
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_1__ultimo_ultimo__["a" /* UltimoPage */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_2__sobre_sobre__["a" /* SobrePage */];
+    }
+    TabsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"E:\Projetos\Euromilhoes-ionic\src\pages\tabs\tabs.html"*/'<ion-tabs color="orang">\n\n  <ion-tab [root]="tab1Root" tabTitle="Último Resultado" tabIcon="ios-add-circle-outline"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Resultados do Mês" tabIcon="ios-archive-outline"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="Sobre" tabIcon="ios-information-circle-outline"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"E:\Projetos\Euromilhoes-ionic\src\pages\tabs\tabs.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], TabsPage);
+    return TabsPage;
+}());
+
+//# sourceMappingURL=tabs.js.map
+
+/***/ }),
+
+/***/ 348:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UltimoPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_http_provider__ = __webpack_require__(349);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var UltimoPage = (function () {
+    function UltimoPage(navCtrl, httpProvider, loadingCtrl) {
+        this.navCtrl = navCtrl;
+        this.httpProvider = httpProvider;
+        this.loadingCtrl = loadingCtrl;
+        this.resultadoEuromilhoes = [];
+        this.loading = this.loadingCtrl.create({
+            content: "\n  \t\t\t<ion-spinner></ion-spinner>"
+        });
+        this.getDadosTodos();
+    }
+    UltimoPage.prototype.getDadosTodos = function () {
+        this.resultadoEuromilhoes = [];
+        this.getEuromilhoes();
+        this.getTotoloto();
+        this.getMilhao();
+    };
+    UltimoPage.prototype.getEuromilhoes = function () {
+        this.resultadoEuromilhoes.push(this.httpProvider.dadosEuromilhoes());
+        console.log(this.resultadoEuromilhoes);
+    };
+    UltimoPage.prototype.getTotoloto = function () {
+        this.resultadoEuromilhoes.push(this.httpProvider.dadosTotoloto());
+        console.log(this.resultadoEuromilhoes);
+    };
+    UltimoPage.prototype.getMilhao = function () {
+        this.resultadoEuromilhoes.push(this.httpProvider.dadosMilhao());
+        console.log(this.resultadoEuromilhoes);
+    };
+    // Refresher
+    UltimoPage.prototype.doRefresh = function (refresher) {
+        var _this = this;
+        this.getDadosTodos();
+        setTimeout(function () {
+            _this.getDadosTodos();
+            refresher.complete();
+        }, 2000);
+    };
+    UltimoPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-ultimo',template:/*ion-inline-start:"E:\Projetos\Euromilhoes-ionic\src\pages\ultimo\ultimo.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <ion-title>Último Resultado</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n    <ion-refresher (ionRefresh)="doRefresh($event)">\n\n        <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Puxe para atualizar"\n\n                               refreshingSpinner="circles"\n\n                               refreshingText="Atualizando...">\n\n        </ion-refresher-content>\n\n    </ion-refresher>\n\n\n\n    <ion-card *ngFor="let ultimo of resultadoEuromilhoes">\n\n        <ion-card-header>\n\n            <h6><b>{{ ultimo.jogo }} - {{ ultimo.date }}</b></h6>\n\n            <hr/>\n\n        </ion-card-header>\n\n        <ion-card-content>\n\n            <ion-badge color="primary">{{ ultimo.numeros.join(\' \') }}</ion-badge>\n\n        </ion-card-content>\n\n        <ion-card-content *ngIf="ultimo.estrelas">\n\n            <ion-badge color="orang">{{ ultimo.estrelas.join(\' \') }}</ion-badge>\n\n        </ion-card-content>\n\n    </ion-card>\n\n</ion-content>'/*ion-inline-end:"E:\Projetos\Euromilhoes-ionic\src\pages\ultimo\ultimo.html"*/,
+            providers: [__WEBPACK_IMPORTED_MODULE_2__providers_http_provider__["a" /* HttpProvider */]]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_http_provider__["a" /* HttpProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* LoadingController */]])
+    ], UltimoPage);
+    return UltimoPage;
+}());
+
+//# sourceMappingURL=ultimo.js.map
+
+/***/ }),
+
+/***/ 349:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_scrap__ = __webpack_require__(542);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_scrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_scrap__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var HttpProvider = (function () {
+    function HttpProvider() {
+        /**
+         * Grava em localStorage uma json correspondente aos dados obtidos
+         * @param jogo - Nome do jogo (local)
+         * @param date - Data do sorteio (server)
+         * @param numeros - Array com os numeros (server)
+         * @param key - Nome da key para setar no localStorage
+         * @param estrelas - Array com as estrelas (server)
+         */
+        this.gravarEmLocalStorate = function (jogo, date, numeros, key, estrelas) {
+            if (estrelas === void 0) { estrelas = ''; }
+            localStorage.removeItem(key);
+            localStorage.setItem(key, JSON.stringify({ jogo: jogo, date: date, numeros: numeros, estrelas: estrelas }));
+        };
+    }
+    /**
+     * Obtem os dados referentes ao ultimo sorteio do euromilhoes
+     */
+    HttpProvider.prototype.dadosEuromilhoes = function () {
+        var _this = this;
+        var URL_EUROMILHOES = 'https://www.jogossantacasa.pt/web/SCCartazResult/euroMilhoes';
+        var jogo = 'Euromilhoes';
+        __WEBPACK_IMPORTED_MODULE_1_scrap__(URL_EUROMILHOES, function (erro, cheerio) {
+            var chave = cheerio('.regPad').first().text().trim().split('\n')[0].split('+');
+            var date = cheerio('.dataInfo').first().text().split('\n')[1].split('-')[1].trim();
+            var numeros = chave[0].trim().split(' ');
+            var estrelas = chave[1].trim().split(' ');
+            _this.gravarEmLocalStorate(jogo, date, numeros, jogo, estrelas);
+        });
+        return JSON.parse(localStorage.getItem(jogo));
+    };
+    /**
+     * Obtem os dados referentes ao ultimo sorteio do totoloto
+     */
+    HttpProvider.prototype.dadosTotoloto = function () {
+        var _this = this;
+        var URL_TOTOLOTO = 'https://www.jogossantacasa.pt/web/SCCartazResult/totolotoNew';
+        var jogo = 'Totoloto';
+        __WEBPACK_IMPORTED_MODULE_1_scrap__(URL_TOTOLOTO, function (erro, cheerio) {
+            var chave = cheerio('.regPad').first().text().trim().split('\n')[0].split('+');
+            var dataTemp = cheerio('.dataInfo').first().text();
+            var date = dataTemp.substring(dataTemp.length - 10, dataTemp.length);
+            var numeros = chave[0].trim().split(' ');
+            var estrelas = chave[1].trim().split(' ');
+            _this.gravarEmLocalStorate(jogo, date, numeros, jogo, estrelas);
+        });
+        return JSON.parse(localStorage.getItem(jogo));
+    };
+    /**
+     * Obtem os dados referentes ao ultimo sorteio do Milhao
+     */
+    HttpProvider.prototype.dadosMilhao = function () {
+        var _this = this;
+        var URL_MILHAO = 'https://www.jogossantacasa.pt/web/SCCartazResult/m1lhao';
+        var jogo = 'Milhao';
+        __WEBPACK_IMPORTED_MODULE_1_scrap__(URL_MILHAO, function (erro, cheerio) {
+            var numeros = [cheerio('#code_m1').first().text()];
+            var date = cheerio('.dataInfo').first().text().split('\n')[1].split('-')[1].trim();
+            _this.gravarEmLocalStorate(jogo, date, numeros, jogo);
+        });
+        return JSON.parse(localStorage.getItem(jogo));
+    };
+    HttpProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])()
+    ], HttpProvider);
+    return HttpProvider;
+}());
+
+//# sourceMappingURL=http-provider.js.map
+
+/***/ }),
+
+/***/ 465:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SobrePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(110);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SobrePage = (function () {
+    function SobrePage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    SobrePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-sobre',template:/*ion-inline-start:"E:\Projetos\Euromilhoes-ionic\src\pages\sobre\sobre.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Sobre\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n	<div id="img">\n\n		<img src="https://avatars1.githubusercontent.com/u/9402773?s=460&v=4">\n\n	</div>\n\n  <ion-content>\n\n    <ion-list>\n\n      <ion-list-header>\n\n        Sobre Aplicação\n\n      </ion-list-header>\n\n      <ion-item>Nome: Resultados Euromilhões</ion-item>\n\n      <ion-item>Versão: 1.0.0</ion-item>\n\n      <ion-item>Última Atualização: 26/11/2017</ion-item>\n\n      <ion-list-header>\n\n        Desenvolvedor\n\n      </ion-list-header>\n\n      <ion-item>Rúben Silva</ion-item>\n\n      <ion-item>\n\n        <ion-icon name="logo-github" item-start></ion-icon>\n\n        <a href="https://github.com/rubenandre">Github</a>\n\n      </ion-item>\n\n    </ion-list>\n\n  </ion-content>\n\n</ion-content>'/*ion-inline-end:"E:\Projetos\Euromilhoes-ionic\src\pages\sobre\sobre.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+    ], SobrePage);
+    return SobrePage;
+}());
+
+//# sourceMappingURL=sobre.js.map
+
+/***/ }),
+
+/***/ 466:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(467);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(490);
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 490:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(533);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(923);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_http_provider__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_ultimo_ultimo__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_sobre_sobre__ = __webpack_require__(465);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(346);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+var AppModule = (function () {
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_ultimo_ultimo__["a" /* UltimoPage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_sobre_sobre__["a" /* SobrePage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs__["a" /* TabsPage */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* HttpModule */],
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
+                    links: []
+                })
+            ],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
+            entryComponents: [
+                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_ultimo_ultimo__["a" /* UltimoPage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_sobre_sobre__["a" /* SobrePage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs__["a" /* TabsPage */]
+            ],
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_5__providers_http_provider__["a" /* HttpProvider */],
+                { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
+            ]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 533:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(347);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var MyApp = (function () {
+    function MyApp(platform, statusBar, splashScreen) {
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__["a" /* TabsPage */];
+        platform.ready().then(function () {
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            statusBar.styleDefault();
+            splashScreen.hide();
+        });
+    }
+    MyApp = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"E:\Projetos\Euromilhoes-ionic\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"E:\Projetos\Euromilhoes-ionic\src\app\app.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    ], MyApp);
+    return MyApp;
+}());
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 557:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 590:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 591:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 660:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 758:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ })
+
+},[466]);
+//# sourceMappingURL=main.js.map

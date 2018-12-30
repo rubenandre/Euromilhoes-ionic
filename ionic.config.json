@@ -1,8 +1,8 @@
 {
   "name": "Euromilhoes",
-  "app_id": "67bc4865",
-  "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "ionic-angular",
+  "id": "67bc4865"
 }
