@@ -29,17 +29,14 @@ export class UltimoPage {
     }
     getEuromilhoes() {
         this.resultadoEuromilhoes.push(this.httpProvider.dadosEuromilhoes())
-        console.log(this.resultadoEuromilhoes)
     }
 
     getTotoloto(){
         this.resultadoEuromilhoes.push(this.httpProvider.dadosTotoloto())
-        console.log(this.resultadoEuromilhoes)
     }
 
     getMilhao() {
         this.resultadoEuromilhoes.push(this.httpProvider.dadosMilhao())
-        console.log(this.resultadoEuromilhoes)
     }
 
     // Refresher
