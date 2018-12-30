@@ -18,14 +18,25 @@ export class UltimoPage {
             content: `<ion-spinner></ion-spinner>`
 
         });
+
         this.getDadosTodos()
     }
 
     getDadosTodos() {
+        this.loading.present();
         this.resultadoEuromilhoes = []
-        this.getEuromilhoes()
-        this.getTotoloto()
-        this.getMilhao()
+        setTimeout(() => {
+            this.getEuromilhoes()
+        }, 1000);
+
+        setTimeout(() => {
+            this.getTotoloto()
+        }, 1000);
+
+        setTimeout(() => {
+            this.getMilhao()
+        }, 1000);
+        this.loading.dismiss();
     }
     getEuromilhoes() {
         this.resultadoEuromilhoes.push(this.httpProvider.dadosEuromilhoes())
